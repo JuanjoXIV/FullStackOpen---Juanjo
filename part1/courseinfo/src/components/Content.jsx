@@ -6,19 +6,23 @@ import {
 	exercises2,
 	exercises3,
 } from '../files/constants';
+import Part from './Part';
 
 export const Content = () => {
 	return (
 		<div>
-			<p>
-				{part1} {exercises1}
-			</p>
-			<p>
-				{part2} {exercises2}
-			</p>
-			<p>
-				{part3} {exercises3}
-			</p>
+			<Part
+				name={part1}
+				number={exercises1}
+			/>
+			<Part
+				name={part2}
+				number={exercises2}
+			/>
+			<Part
+				name={part3}
+				number={exercises3}
+			/>
 		</div>
 	);
 };
