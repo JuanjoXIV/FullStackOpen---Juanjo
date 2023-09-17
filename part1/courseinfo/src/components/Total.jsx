@@ -1,9 +1,8 @@
-import { exercises1, exercises2, exercises3 } from '../files/constants';
-
-export const Total = () => {
+export const Total = ({ total }) => {
+	console.log(total);
 	return (
 		<div>
-			<p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
+			<p>Number of exercises {total}</p>
 		</div>
 	);
 };
